@@ -8,14 +8,13 @@ The file structure to make sure that everything works as intended is the followi
 
 ```
 ── CF-CBMs
-│   ├── clip
-│   ├── data
-│   ├── data_utils.py
-│   ├── inference.py
+│   ├── clip/
+│   ├── data/
+│   ├── saved_models/
+│   ├── README.md
 │   ├── main.py
 │   ├── networks.py
-│   ├── README.md
-│   ├── saved_models
+│   ├── data_utils.py
 │   └── utils.py
 
 ```
