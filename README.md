@@ -1,6 +1,6 @@
 # Coarse-to-Fine Concept Bottleneck Models
 
-This is the official code implementation for the paper titled "Coarse to Fine Concept Bottleneck Models". We propose a novel framework towards Interpretable Deep Networks using multi-modal models and a novel multilevel construction for capturing low-level details
+This is the official code implementation for the paper titled "Coarse to Fine Concept Bottleneck Models" published at NeurIPS 2024. We propose a novel framework towards Interpretable Deep Networks using multi-modal models and a novel multilevel construction for capturing low-level details
 
 # Setup 
 
