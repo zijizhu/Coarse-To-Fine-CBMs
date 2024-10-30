@@ -33,10 +33,6 @@ arising from a pretrained clip model. To facilitate training and inference speed
 we first embed the dataset in the CLIP embedding space and 
 use then load the embedded vectors as the dataset to be used. 
 
-For reproducibility and further development, we provide our image features in the following
-links:
-
-....
 
 For saving the text embeddings of a different dataset, one should use the
 following command:
