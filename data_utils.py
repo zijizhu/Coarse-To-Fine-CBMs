@@ -20,7 +20,7 @@ datasets_paths = {
 label_paths = {
     'places365': base_path + 'data/categories_places365.txt',
     'imagenet': base_path + 'data/imagenet_classes.txt',
-    'cub': base_path + 'data/cub_classes.txt',
+    'cub': base_path + 'data/concept_sets_high/cub_classes_cleaned.txt',
     'sun': base_path + 'data/sun_classes.txt'
 }
 
