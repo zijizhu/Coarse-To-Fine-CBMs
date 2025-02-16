@@ -10,7 +10,7 @@ from clip.clip import _transform
 import warnings
 import argparse
 from networks import LinearClassifier, DiscoveryMechanism
-import tensorboard_logger as tlogger
+# import tensorboard_logger as tlogger
 from utils import get_optimizer, compute_and_save_features, AverageMeter, accuracy
 from data_utils import get_loaders, get_concepts, get_feature_dir, get_concept_indicators
 import shutil
@@ -469,7 +469,7 @@ if __name__ == '__main__':
                     discoverers[-1].load_state_dict(ckpt['disc_state_dict_low'])
 
 
-        logger = tlogger.Logger(spec_dir + 'logs', flush_secs=10)
+        # logger = tlogger.Logger(spec_dir + 'logs', flush_secs=10)
 
         start_time = time.time()
         num_samples = 1 if not args.discovery else 1
@@ -552,7 +552,7 @@ if __name__ == '__main__':
             print('Epoch: {}, Top Validation Acc@1 High {:.3f}, '
                   'Top Validation Acc@1 Low {:.3f}'.format(epoch, best_acc_high, best_acc_low))
 
-        del optimizer, classifiers, discoverers, logger, criterion, cparameters, dparameters, val_loader, train_loader
+        # del optimizer, classifiers, discoverers, logger, criterion, cparameters, dparameters, val_loader, train_loader
         # for every exp-freq epochs, update the values of the similarities, save and reload
         # if (epoch +1) % args.exp_freq == 0:
         #    train_loader = update_dataset(args, train_loader, classifier)
